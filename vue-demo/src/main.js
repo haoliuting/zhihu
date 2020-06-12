@@ -10,6 +10,11 @@ for (var i in Common) {
   Vue.component(i, Common[i])
 }
 
+import filters from "./filters"
+for (var i in filters) {
+  Vue.filter(i, filters[i])
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
